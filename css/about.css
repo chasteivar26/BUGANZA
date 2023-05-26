@@ -1,0 +1,315 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: arial ;
+	scroll-behavior: smooth;
+	text-decoration: none;
+	user-select: none;
+}
+body{
+	background-color: #e6e6e6;
+}
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#close,#igg{
+	background-color: white;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+	transition: all 400ms ease-in-out;
+	
+}
+i img{
+	border-radius: 50%;
+}
+#igg{
+	/* display: none; */
+	/* left: 30%; */
+	z-index: -1;
+}
+:root{
+	--text-clr: black;
+}
+.space{
+	width: 100%;
+	height: 3.5rem;
+	/*background-color: green;*/
+}
+.container{
+	width: 95%;
+	margin: 0 auto;
+}
+.ui-container{
+	width: 100%;
+	height: 100vh;
+	
+}
+.navBar{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    /*z-index: 2;
+    position: fixed;*/
+    /*top: 0;*/
+	/*background: black;*/
+	position: fixed;
+
+}
+.navBar ul{
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	/*background-color: black;*/
+	z-index: 1000;
+	/*top: 0;*/
+	/*position: fixed;*/
+}
+.navBar ul li{
+	margin: 1rem auto;
+	list-style: none;
+}
+
+.navBar ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.onmove{
+	background-color: #000000;
+	box-shadow: 0 0 0 1px white;
+	height: 60px;
+
+}
+/* ==================== NavMenu ====================== */
+.icon i{
+	font-size: 2.5rem;
+	cursor: pointer;
+	display: none;
+}
+#last{
+	display: none;
+}
+@media screen AND (max-width: 1024px){
+	.container{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.icon i{
+	font-size: 2.5rem;
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: white;
+	/* background-color: gray; */
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+.icon i{
+	display: block;
+}
+	#navBar{
+		background-color: rgba(0,0,0,0.9);
+		height: 50vh;
+		width: 100%;
+		/* right: 0; */
+		/* right: -1000px; */
+		display: none;
+		/* position: relative; */
+		transition: all 400ms ease-in-out;
+	}
+	#last{
+		display: block;
+	}
+	#last ul li{
+		padding: 20px;
+		transition: all 200ms ease-in-out;
+	}
+	#last ul{
+		display: flex;
+		flex-direction: column;
+		/* gap: 2rem; */
+		text-align: center;
+		/* margin-top: 20px; */
+	}
+	#last ul .nnv:hover{
+		background-color: white;
+		color: black;
+	}
+	#last{
+		background-color: rgba(0,0,0,0.9);
+		height: 250px;
+		width: 30%;
+		transition: all 600ms ease-in-out;
+		position: fixed;
+		/* display: none; */
+		left: -500px;
+	}
+	.close{
+		cursor: pointer;
+	}
+	.close:hover{
+		background-color: rgb(100, 61, 61);
+		color: white;
+	}
+    .menu a{
+        color: white;
+    }
+	
+}
+/* =================== ABOUT =================== */
+#about .title h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 15rem;
+    padding: 0.4rem;
+}
+#about .cv{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 30px;
+}
+#about .good{
+    width: 80%;
+    border-left: 15px solid #404040;
+	background-color: #ccc;
+    font-size: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+#about .good span{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#about  .coffee img{
+    height: 70vh;
+}
+#about  .coffee .des{
+    display: flex;
+    flex-direction: column;
+}
+#about .coffee .des div{
+    margin-top: 1rem;
+}
+#about .coffee .des div span{
+    font-size: 20px;
+}
+#about .coffee .des div span label{
+    font-weight: bold;
+}
+/* ================ bottom ============== */
+.btm{
+    /* height: 50vh; */
+    width: 100%;
+    background-color: #646262;
+	margin-top: 500px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+.btm .btmCont .msg .desc{
+    font-size: 20px;
+}
+.btm .btmCont .msg .desc span{
+    font-weight: bold;
+}
+.btm .inputs input,textarea{
+    margin-top: 1rem;
+    width: 90%;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-bottom: solid black;
+    border-radius: 0.4rem;
+    font-size: 14px;
+    padding: 0.3rem;
+
+}
+.btm .inputs textarea{
+    height: 150px;
+}
+.btm .inputs input[type=submit]{
+    margin: 1rem auto;
+    cursor: pointer;
+    font-size: 20px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    height: 35px;
+}
+.btm .btmCont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.btmCont .msgMap iframe{
+    width: 100%;
+    height: 90%;
+    margin-top: 1rem;
+}
+/* ================= responsive =============== */
+@media screen AND (max-width: 1024px) {
+	#about .cv{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		font-size: 20px;
+	}
+	.btm{
+		/* height: 50vh; */
+		width: 100%;
+		background-color: #646262;
+		margin-top: 800px;
+	}
+	.btm .btmCont{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.btmCont .msgMap iframe{
+		width: 100%;
+		height: 300px;
+		margin-top: 1rem;
+	}
+}
+@media screen AND (max-width: 600px){
+	.btm{
+		/* height: 50vh; */
+		width: 100%;
+		background-color: #646262;
+		margin-top: 1000px;
+	}
+	.good p i{
+		font-size: 15px;
+	}
+	.cv {
+		font-size: 15px;
+	}
+}
+@media screen AND (max-width: 420px){
+	.btm{
+		/* height: 50vh; */
+		width: 100%;
+		background-color: #646262;
+		margin-top: 1200px;
+	}
+}
+@media screen AND (max-width: 350px){
+	.btm{
+		/* height: 50vh; */
+		width: 100%;
+		background-color: #646262;
+		margin-top: 1500px;
+	}
+}
