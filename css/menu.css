@@ -264,4 +264,7 @@ i img{
 		height: 300px;
 		margin-top: 1rem;
 	}
+	.unity{
+		font-size: .9rem;
+	}
 }

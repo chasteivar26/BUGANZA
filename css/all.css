@@ -5,7 +5,7 @@
 	scroll-behavior: smooth;
 	/* color: #b3b3b3; */
 	text-decoration: none;
-	user-select: none;
+	/* user-select: none; */
 }
 /* body{
 	background-color: #1a1a1a;
@@ -47,23 +47,25 @@ i img{
 .ui-container{
 	width: 100%;
 	height: 100vh;
-	background:linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/beer4.jpg);
+	/* background:linear-gradient(to top, var(--text-clr),rgba(0, 0, 0, 0.3)), url(../img/beer4.jpg); */
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	animation-name: sample;
 	animation-duration: 20s;
 	animation-iteration-count: infinite;
+	/* background-repeat: no-repeat; */
+	background-size: cover;
 	/*z-index: -1;*/
 	/*top: 0;*/
 	/*margin-top: -200px;*/
 }
 @keyframes sample{
-	0%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/beer4.jpg);}
-	25%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/beer2.jpg);}
-	50%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/beer3.jpg);}
-	75%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/beer.jpg);}
-	100%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/beer4.jpg);}
+	0%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/one.jpg);}
+	25%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/two.jpg);}
+	50%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/three.jpg);}
+	75%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/four.jpg);}
+	100%{background: linear-gradient(to top, var(--text-clr),rgba(0,0,0,0.3)), url(../img/one.jpg);}
 }
 .navBar{
     width: 100%;
@@ -101,7 +103,6 @@ i img{
 	background-color: #000000;
 	box-shadow: 0 0 0 1px white;
 	height: 60px;
-
 }
 /* ==================== NavMenu ====================== */
 .icon i{
@@ -197,6 +198,47 @@ i img{
     text-align: center;
     color: white;
     font-size: 35px;
+	margin-left: -12rem;
+	/* display: none; */
+}
+.head button{
+	margin-left: -50rem;
+	padding: .7rem;
+	font-size: 1rem;
+	border-radius: .5rem;
+	background-color: blue;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+/* ================ platform ============ */
+.ooo{
+	background-color: black;
+	width: 200px;
+	height: 640px;
+	margin-top: -40rem;
+	float: right;
+	/* display: none; */
+}
+.ooo .la{
+	margin-top: 3rem;
+}
+.ooo .la .headd{
+	color: #7e7c7c;
+	font-size: 1.4rem;
+	margin-left: 1rem;
+}
+.ooo .la .details .a{
+	color: rgb(3, 102, 173);
+	font-size: .8rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	cursor: pointer;
+}
+.ooo .la .details .b{
+	color: #7e7c7c;
+	margin-top: .4rem;
+	margin-left: 1rem;
 }
 /* ================ bottom ============== */
 .btm{
@@ -266,13 +308,22 @@ i img{
 		font-size: 22px;
 	}
 	.btm .btmCont{
-		display: grid;
+		display: grid;background-color: #000000;
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.btmCont .msgMap iframe{
 		width: 100%;
 		height: 300px;
 		margin-top: 1rem;
+	}
+	.ooo{
+		display: none;
+	}
+	.head{
+		margin-left: 2rem;
+	}
+	.head a{
+		margin-left: 20rem;
 	}
 }
 @media screen AND (max-width: 600px){
@@ -290,5 +341,9 @@ i img{
 	}
 	.btm .btmCont .msg .desc{
 		font-size: 15px;
+	}
+	.head a{
+		margin-left: 36rem;
+		padding: .5rem;
 	}
 }
